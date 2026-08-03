@@ -25,8 +25,9 @@ An open, low-cost hand exoskeleton for rehabilitation research, and the subject 
 master's thesis.
 
 All four long fingers are built and instrumented, three magnetic joint encoders each,
-twelve in total, and actuation-ready: one mechanism, one tendon routing, one antagonist
-belt drive, different sizes.
+twelve in total. Every finger runs the same mechanism, the same tendon routing and the
+same antagonist belt drive, scaled to its own size, and the forearm housing provisions
+ten tendon-spool bays.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/system-map-dark.svg">
