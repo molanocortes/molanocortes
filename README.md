@@ -39,9 +39,41 @@ and published: the IMU node runs [`bno085-multi`](https://github.com/molanocorte
 and [`dynamixel-on-device`](https://github.com/molanocortes/dynamixel-on-device) exists to
 move that bus off the host entirely.
 
+### Three surfaces, one contract
+
+The device is only half of it. The same host serves one WebSocket contract to three
+clients that stay in sync with each other, so a session recorded on one is visible on
+all of them.
+
+**Web console.** The operator surface: live telemetry, motor tools, guided sessions,
+capture, and a CAD digital twin driven from the encoders. Also carries the sign-language
+capture and translation surfaces.
+
+**LUMEN, the AR layer.** A WebXR passthrough experience for the headset. The robotic
+hand renders in the room next to the real one, driven by the same stream, with an
+environment scan so the twin sits on your actual desk.
+
+**Android companion.** The same console on a phone, pairing by QR, speaking the exact
+same host contract so anything that serves the web console serves the app unchanged.
+
+Underneath them: a **series-elastic tendon control stack**, a cascaded tension and
+impedance controller that closes the loop on the joint encoders and uses the springs as
+force sensors. It is validated in simulation only; nothing there claims a hardware
+demonstration.
+
+An executable spec spins the host up in simulation, connects all three surfaces and
+proves shared recording, host-side rep counting, motor clamping and hostile-input
+tolerance across them.
+
+> These four live in the project repository and are **not public yet**. They go out with
+> the open release of the device, not before.
+
 ---
 
-### Open source
+### Published
+
+Pieces I pulled out of the above and released on their own, because they are useful
+without the rest of it.
 
 **[dynamixel-on-device](https://github.com/molanocortes/dynamixel-on-device)** · C++ · AGPL-3.0
 Runs the Dynamixel Protocol 2.0 loop on the microcontroller instead of a host PC. Fast Sync
