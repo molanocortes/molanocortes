@@ -28,30 +28,10 @@ All four long fingers are built and instrumented, three magnetic joint encoders 
 twelve in total, and actuation-ready: one mechanism, one tendon routing, one antagonist
 belt drive, different sizes.
 
-Motor-driven tendon actuation works on the motorised finger. Worn-exoskeleton integration
-is still open: it needs a cable-routing revision so tendon length can follow a human finger
-without losing tension.
-
-```mermaid
-%%{init: {'theme':'base','themeVariables':{
-  'fontFamily':'ui-monospace, SFMono-Regular, Menlo, monospace','fontSize':'13px',
-  'primaryColor':'#f1efe9','primaryTextColor':'#191713','primaryBorderColor':'#bdb7a7',
-  'secondaryColor':'#faf9f5','tertiaryColor':'#faf9f5','clusterBkg':'transparent',
-  'clusterBorder':'#8f887c','lineColor':'#8f887c','edgeLabelBackground':'#f1efe9',
-  'titleColor':'#8f887c'}}}%%
-flowchart LR
-  subgraph HAND["worn hardware"]
-    ENC["12x AS5600<br/>joint encoders"]
-    IMU["2x BNO085<br/>hand + forearm"]
-  end
-  ENC --> TE
-  IMU --> TE
-  TE["Teensy 4.1<br/>acquisition, SD log"] -->|USB serial| HOST["host PC<br/>control loop"]
-  HOST -->|U2D2, Protocol 2.0| DXL["Dynamixel XC330<br/>tendon spools"]
-  DXL -->|tendon| HAND
-  HOST --> UI["web console<br/>AR layer, Android"]
-  linkStyle 4 stroke:#d94e12,stroke-width:2px
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/system-map-dark.svg">
+  <img alt="Signal map of the TAKTO system. Twelve AS5600 joint encoders behind two multiplexers, two BNO085 IMUs and one EMG channel feed a Teensy 4.1, which streams over USB serial to a host PC. The host owns the motor bus through a U2D2 and drives Dynamixel XC330 servos on tendon spools, whose tendons close the loop back onto the worn hand. The host also feeds the web console, the AR layer and the Android app." src="assets/system-map-light.svg" width="100%">
+</picture>
 
 The split is deliberate. The Teensy only acquires and logs; the host owns the motor bus
 through a U2D2 and closes the loop. Two boxes in that diagram are libraries I pulled out
