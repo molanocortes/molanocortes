@@ -75,6 +75,14 @@ tolerance across them.
 Pieces I pulled out of the above and released on their own, because they are useful
 without the rest of it.
 
+**[consent-scoped-agent-negotiation](https://github.com/molanocortes/consent-scoped-agent-negotiation)** · Python · MIT
+CSNP: two people's AI agents settle a bounded decision without either seeing the other's
+private data. Consent is a signed envelope enforced in code by an object-capability guard,
+the wire format has no free-text field for an injection to live in, model output is
+re-derived against the granted choice set, and the disclosure claim is measured on the
+transmitted bytes. Ships a wire spec, a threat model, and an adversarial test suite that
+runs offline.
+
 **[dynamixel-on-device](https://github.com/molanocortes/dynamixel-on-device)** · C++ · AGPL-3.0
 Runs the Dynamixel Protocol 2.0 loop on the microcontroller instead of a host PC. Fast Sync
 Read, allocation-free, bounded waits, and a wire protocol you can unit-test on a laptop with
