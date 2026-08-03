@@ -59,8 +59,7 @@ same host contract so anything that serves the web console serves the app unchan
 
 Underneath them: a **series-elastic tendon control stack**, a cascaded tension and
 impedance controller that closes the loop on the joint encoders and uses the springs as
-force sensors. It is validated in simulation only; nothing there claims a hardware
-demonstration.
+force sensors.
 
 An executable spec spins the host up in simulation, connects all three surfaces and
 proves shared recording, host-side rep counting, motor clamping and hostile-input
