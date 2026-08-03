@@ -26,13 +26,11 @@ master's thesis.
 
 All four long fingers are built and instrumented, three magnetic joint encoders each,
 twelve in total, and actuation-ready: one mechanism, one tendon routing, one antagonist
-belt drive, different sizes. The forearm housing carries ten tendon-spool bays. One finger
-is motorised, which is a self-funded budget line rather than a design limit, because the
-wiring, the firmware and the bays were all sized for the full motor count.
+belt drive, different sizes.
 
-Motor-driven tendon actuation works on that finger. Worn-exoskeleton integration is still
-open: it needs a cable-routing revision so tendon length can follow a human finger without
-losing tension.
+Motor-driven tendon actuation works on the motorised finger. Worn-exoskeleton integration
+is still open: it needs a cable-routing revision so tendon length can follow a human finger
+without losing tension.
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{
