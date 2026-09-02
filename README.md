@@ -65,11 +65,11 @@ in simulation before you print a part.
 ### Also built
 
 **Metal printing, the research side.** While building TAKTO I worked in Hochschule Anhalt's
-laser powder-bed group on a colleague's AlSi10Mg study: pushing the alloy toward a higher
-elastic modulus by controlling crystal orientation. My part was the simulation and the
-metallography: FEM of the build predicting residual stress and distortion, the heat treatments
-that relieve them, microstructure analysis under the microscope, and running the machine.
-Showed the process at Hannover Messe 2026, in whichever of four languages the visitor spoke.
+laser powder-bed group on AlSi10Mg: pushing the alloy toward a higher elastic modulus by
+controlling crystal orientation. I did the simulation and the metallography: FEM of the build
+predicting residual stress and distortion, the heat treatments that relieve them,
+microstructure analysis under the microscope, and running the machine. Showed the process at
+Hannover Messe 2026, in whichever of four languages the visitor spoke.
 
 **An EMG-driven gripper, before TAKTO.** Three of us built it; I led. Five-bar fingers with
 springs for underactuation, two EMG channels off a BIOPAC, a finite-state controller switching
