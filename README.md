@@ -4,13 +4,14 @@
 
 Robotics systems engineer. Mechanical engineer by training, top 1 % of Colombia's national
 graduate exam; M.Sc. Biomedical Engineering at Hochschule Anhalt, embedded focus. I take
-physical robots from mechanism to boards to firmware to the software that drives them.
+physical robots from mechanism to boards to firmware to the software that drives them, and I
+have shipped the whole thing alone.
 
-Robots are our closest attempt at something that feels alive. I care about embodied AI from
-both ends: what robots become as they get capable, and what one engineer can now build with
-AI at the bench. TAKTO ONE below is the second point, made in hardware.
+I want to work on embodied AI, and I already build with AI at the bench. TAKTO ONE below is
+what one engineer ships that way.
 
-Köthen, Germany · Spanish, English, German, Portuguese ·
+Finishing the M.Sc. in autumn 2026. Open to robotics R&D roles in Europe from then, and to
+collaborations on the device now. Köthen, Germany · Spanish, English, German, Portuguese ·
 [LinkedIn](https://www.linkedin.com/in/sm29) · [sebastian.molano.29@gmail.com](mailto:sebastian.molano.29@gmail.com)
 
 <picture>
@@ -39,6 +40,11 @@ code that runs with no hardware attached.
 joint itself, drives eight tendons from the forearm, and runs the control loop on the device.
 Designed, built and programmed by one person.
 
+**Why it is built this way.** A camera loses fingers the moment they cross or curl, a glove of
+flex sensors drifts, and a control loop that goes through a laptop is not a control loop. So:
+a magnetic encoder on every joint, a Teensy that owns the motor bus, and one twin that runs
+from the same stream on a monitor, in a headset or on a phone.
+
 The repository is everything needed to build one: CAD, two KiCad boards, Teensy firmware,
 bridge and console, AR layer, phone app, BOM, illustrated build guide. The whole stack runs
 in simulation before you print a part.
@@ -46,6 +52,14 @@ in simulation before you print a part.
 **[Explore the repository →](https://github.com/molanocortes/takto-one)**
 
 <sub>Bench status: four fingers built and instrumented, twelve encoders live, motor-driven finger motion demonstrated. Force rendering and assistance not yet characterised.</sub>
+
+---
+
+### If you have five minutes
+
+- **Read code:** [dynamixel-on-device](https://github.com/molanocortes/dynamixel-on-device). A servo-bus protocol loop with no heap and bounded waits, proven by tests that run on a laptop with no servo attached.
+- **Read reasoning:** [consent-scoped-agent-negotiation](https://github.com/molanocortes/consent-scoped-agent-negotiation). Threat model, wire spec, and an adversarial suite that tries to break both.
+- **See the device move:** [the TAKTO console](https://github.com/molanocortes/takto-one/tree/main/software/console) runs in simulation from one command, no hardware, twelve joints and the 3D twin live.
 
 ---
 
@@ -60,11 +74,13 @@ spoke.
 springs for underactuation, two EMG channels off a BIOPAC, a finite-state controller switching
 on signal thresholds. I wrote it up as first author.
 
-**Hyperspectral tissue classification.** 92 bands, classical models against dense and Conv1D
-networks in TensorFlow, Grad-CAM. Random forest won: F1 0.934 held out.
+**Hyperspectral tissue classification.** 92 bands. Logistic regression, SVM and random forest
+against dense and Conv1D networks in TensorFlow, with Grad-CAM to see what the networks looked
+at. Random forest won, so that is what I reported: F1 0.934 held out.
 
-**Autonomous logistics and heavy handling.** Mechanical components for Cargobot's autonomous
-logistics systems, CAD through CAM. Earlier, a remote-controlled mover for 250 kg marble slabs.
+**Machines that move heavy things.** Mechanical parts for Cargobot's autonomous logistics
+robots, CAD through CAM. Before that, a remote-controlled machine that carries 250 kg marble
+slabs.
 
 ---
 
