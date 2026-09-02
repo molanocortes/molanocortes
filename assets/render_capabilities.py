@@ -38,7 +38,7 @@ THEMES = {
 }
 
 KICKER_LEFT = "ONE ENGINEER, THE WHOLE STACK"
-KICKER_RIGHT = "TAKTO ONE · 2026"
+KICKER_RIGHT = "JOINT TO TWIN, ONE DATA PATH"
 
 # label, body lines (kept short so they never wrap at README width), path node
 COLUMNS = [
