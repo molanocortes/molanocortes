@@ -64,25 +64,23 @@ in simulation before you print a part.
 
 ### Also built
 
-**Metal printing, for lighter robots.** Printed metal gives a robot part complex geometry
-without the mass, if you can trust the print. A year in Hochschule Anhalt's laser powder-bed
-group on AlSi10Mg taught me how: FEM that predicts residual stress and distortion before a
-build, the heat treatments that relieve them, microscope checks on what came out, and the
-machine itself. Part of that was work on raising the alloy's stiffness through crystal
-orientation, which for a robot means stiffness per gram. Showed the process at Hannover Messe
-2026, in whichever of four languages the visitor spoke.
+**Research associate, metal additive manufacturing, Hochschule Anhalt.** A year on the laser
+powder-bed machine with AlSi10Mg: FEM predicting residual stress and distortion before a
+build, heat treatments to relieve them, microscopy on the result, and work on raising the
+alloy's stiffness through crystal orientation. Presented it at Hannover Messe 2026 in four
+languages. What it buys a robot: complex geometry without the mass, from a print you can trust.
 
-**An EMG-driven gripper, before TAKTO.** Three of us built it; I led. Five-bar fingers with
-springs for underactuation, two EMG channels off a BIOPAC, a finite-state controller switching
-on signal thresholds. I wrote it up as first author.
+**Team lead and first author, EMG-driven underactuated gripper.** Three of us, one working
+gripper: five-bar fingers with springs for underactuation, two EMG channels off a BIOPAC, a
+finite-state controller switching on signal thresholds.
 
-**Hyperspectral tissue classification.** 92 bands. Logistic regression, SVM and random forest
-against dense and Conv1D networks in TensorFlow, with Grad-CAM to see what the networks looked
-at. Random forest won, so that is what I reported: F1 0.934 held out.
+**Hyperspectral tissue classification, F1 0.934 held out.** 92 bands. Logistic regression,
+SVM and random forest against dense and Conv1D networks in TensorFlow, with Grad-CAM to see
+what the networks looked at. The random forest won, so that is what I reported.
 
-**Machines that move heavy things.** Mechanical parts for Cargobot's autonomous logistics
-robots, CAD through CAM. Before that, a remote-controlled machine that carries 250 kg marble
-slabs.
+**Design engineer, Cargobot, autonomous logistics.** Mechanical components for autonomous
+logistics robots, CAD through CAM. Before that, a remote-controlled machine that carries
+250 kg marble slabs.
 
 ---
 
