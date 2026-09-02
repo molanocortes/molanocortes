@@ -2,9 +2,9 @@
 
 ## Sebastian Molano
 
-Robotics systems engineer. Mechanical engineer by training, top 1 % nationally in Colombia's
-exit exam; M.Sc. Biomedical Engineering at Hochschule Anhalt, embedded focus. I take physical
-robots from mechanism to boards to firmware to the software that drives them.
+Robotics systems engineer. Mechanical engineer by training, top 1 % of Colombia's national
+graduate exam; M.Sc. Biomedical Engineering at Hochschule Anhalt, embedded focus. I take
+physical robots from mechanism to boards to firmware to the software that drives them.
 
 Robots are our closest attempt at something that feels alive. I care about embodied AI from
 both ends: what robots become as they get capable, and what one engineer can now build with
