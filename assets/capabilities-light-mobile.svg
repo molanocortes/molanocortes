@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="480" viewBox="0 0 420 480" role="img" aria-labelledby="t d">
+<title id="t">What I build: mechanism, electronics, firmware, control and software, one data path</title>
+<desc id="d">Five layers of the TAKTO ONE stack, each with the specifics of the shipped design. A hairline traces the data path from a finger joint to the 3D twin.</desc>
+<text x="22" y="20" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" letter-spacing="1.6" fill="#8B8474">ONE ENGINEER, THE WHOLE STACK</text>
+<line x1="22" y1="32" x2="398" y2="32" stroke="#D8D2C4" stroke-width="1"/>
+<line x1="26" y1="60" x2="26" y2="372" stroke="#D8D2C4" stroke-width="1"/>
+<circle cx="26" cy="60" r="3.2" fill="#2F76BF"/>
+<text x="44" y="64" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="12" letter-spacing="1.8" font-weight="600" fill="#23201A">MECHANISM</text>
+<text x="398" y="64" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="9.5" letter-spacing="1.4" text-anchor="end" fill="#8B8474">JOINT</text>
+<line x1="44" y1="74" x2="64" y2="74" stroke="#2F76BF" stroke-width="2"/>
+<line x1="64" y1="74" x2="398" y2="74" stroke="#D8D2C4" stroke-width="1"/>
+<text x="44" y="96" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#23201A">Tendon-driven fingers<tspan fill="#8B8474"> · </tspan><tspan fill="#5C564A">4 fingers, 12 joints</tspan></text>
+<text x="44" y="115" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#5C564A">Series-elastic spools<tspan fill="#8B8474"> · </tspan>71 printed parts</text>
+<circle cx="26" cy="138" r="3.2" fill="#2F76BF"/>
+<text x="44" y="142" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="12" letter-spacing="1.8" font-weight="600" fill="#23201A">ELECTRONICS</text>
+<text x="398" y="142" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="9.5" letter-spacing="1.4" text-anchor="end" fill="#8B8474">ENCODER</text>
+<line x1="44" y1="152" x2="64" y2="152" stroke="#2F76BF" stroke-width="2"/>
+<line x1="64" y1="152" x2="398" y2="152" stroke="#D8D2C4" stroke-width="1"/>
+<text x="44" y="174" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#23201A">2 custom PCBs, KiCad<tspan fill="#8B8474"> · </tspan><tspan fill="#5C564A">12 × AS5600 encoders</tspan></text>
+<text x="44" y="193" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#5C564A">3 IMUs, EMG front end<tspan fill="#8B8474"> · </tspan>8 Dynamixel servos</text>
+<circle cx="26" cy="216" r="3.2" fill="#2F76BF"/>
+<text x="44" y="220" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="12" letter-spacing="1.8" font-weight="600" fill="#23201A">FIRMWARE</text>
+<text x="398" y="220" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="9.5" letter-spacing="1.4" text-anchor="end" fill="#8B8474">TEENSY</text>
+<line x1="44" y1="230" x2="64" y2="230" stroke="#2F76BF" stroke-width="2"/>
+<line x1="64" y1="230" x2="398" y2="230" stroke="#D8D2C4" stroke-width="1"/>
+<text x="44" y="252" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#23201A">Teensy 4.1, C++<tspan fill="#8B8474"> · </tspan><tspan fill="#5C564A">Control loop to 2 kHz</tspan></text>
+<text x="44" y="271" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#5C564A">Motor bus on the MCU<tspan fill="#8B8474"> · </tspan>SD log, round display</text>
+<circle cx="26" cy="294" r="3.2" fill="#2F76BF"/>
+<text x="44" y="298" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="12" letter-spacing="1.8" font-weight="600" fill="#23201A">CONTROL</text>
+<text x="398" y="298" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="9.5" letter-spacing="1.4" text-anchor="end" fill="#8B8474">TENDON</text>
+<line x1="44" y1="308" x2="64" y2="308" stroke="#2F76BF" stroke-width="2"/>
+<line x1="64" y1="308" x2="398" y2="308" stroke="#D8D2C4" stroke-width="1"/>
+<text x="44" y="330" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#23201A">Series-elastic tendons<tspan fill="#8B8474"> · </tspan><tspan fill="#5C564A">Transparent to assist</tspan></text>
+<text x="44" y="349" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#5C564A">Current-limited motors<tspan fill="#8B8474"> · </tspan>Hand-to-hand teleop</text>
+<circle cx="26" cy="372" r="3.2" fill="#2F76BF"/>
+<text x="44" y="376" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="12" letter-spacing="1.8" font-weight="600" fill="#23201A">SOFTWARE</text>
+<text x="398" y="376" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="9.5" letter-spacing="1.4" text-anchor="end" fill="#8B8474">TWIN</text>
+<line x1="44" y1="386" x2="64" y2="386" stroke="#2F76BF" stroke-width="2"/>
+<line x1="64" y1="386" x2="398" y2="386" stroke="#D8D2C4" stroke-width="1"/>
+<text x="44" y="408" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#23201A">Browser console, 3D twin<tspan fill="#8B8474"> · </tspan><tspan fill="#5C564A">WebXR AR layer</tspan></text>
+<text x="44" y="427" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#5C564A">Expo app, iOS + Android<tspan fill="#8B8474"> · </tspan>Session replay in 4D</text>
+<text x="398" y="472" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="10.5" letter-spacing="1.6" text-anchor="end" fill="#8B8474">JOINT TO TWIN, ONE DATA PATH</text>
+<circle r="4.5" fill="#2F76BF" opacity="0.95" cx="26"><animate attributeName="cy" values="60;372" dur="6s" calcMode="spline" keySplines="0.4 0 0.2 1" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.95;0.95;0" keyTimes="0;0.06;0.94;1" dur="6s" repeatCount="indefinite"/></circle>
+</svg>
