@@ -51,14 +51,14 @@ in simulation before you print a part.
 
 ### Also built
 
-**Metal additive manufacturing, Hochschule Anhalt.** Research associate, April 2025 to June
-2026, in parallel with the thesis: ran the university's LPBF machine, repeatable AlSi10Mg
-builds, FEM and fatigue evaluation of the printed parts. Presented at Hannover Messe 2026 in
-four languages.
+**Metal printing.** While building TAKTO I also ran Hochschule Anhalt's laser powder-bed
+machine: AlSi10Mg parts that come out the same every time, then FEM and fatigue checks on what
+came out. Showed the process at Hannover Messe 2026, in whichever of four languages the visitor
+spoke.
 
-**EMG-controlled underactuated gripper.** Led a team of three: spring-adapted five-bar fingers,
-dual-channel BIOPAC acquisition, finite-state control on signal thresholds. First author of
-the write-up.
+**An EMG-driven gripper, before TAKTO.** Three of us built it; I led. Five-bar fingers with
+springs for underactuation, two EMG channels off a BIOPAC, a finite-state controller switching
+on signal thresholds. I wrote it up as first author.
 
 **Hyperspectral tissue classification.** 92 bands, classical models against dense and Conv1D
 networks in TensorFlow, Grad-CAM. Random forest won: F1 0.934 held out.
