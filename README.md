@@ -35,9 +35,9 @@ code that runs with no hardware attached.
 
 <a href="https://github.com/molanocortes/takto-one"><img src="assets/takto/turntable.webp" alt="TAKTO ONE turning through one full revolution" width="100%"></a>
 
-**Open-source hand exoskeleton. My master's thesis.** Twelve joints read at the joint, eight
-tendons driven from the forearm, the control loop on the device. Designed, built and
-programmed by one person.
+**Open-source hand exoskeleton. My master's thesis.** It measures twelve finger joints at the
+joint itself, drives eight tendons from the forearm, and runs the control loop on the device.
+Designed, built and programmed by one person.
 
 The repository is everything needed to build one: CAD, two KiCad boards, Teensy firmware,
 bridge and console, AR layer, phone app, BOM, illustrated build guide. The whole stack runs
