@@ -51,22 +51,20 @@ in simulation before you print a part.
 
 ### Also built
 
-**Metal additive manufacturing, Hochschule Anhalt.** Research associate: ran the university's
-LPBF machine, repeatable AlSi10Mg builds, FEM and fatigue evaluation of the printed parts.
-Presented it at Hannover Messe 2026 in four languages. Before that, reverse-engineered a
-titanium hip implant from a 3D scan into editable CAD.
+**Metal additive manufacturing, Hochschule Anhalt.** Research associate, April 2025 to June
+2026, in parallel with the thesis: ran the university's LPBF machine, repeatable AlSi10Mg
+builds, FEM and fatigue evaluation of the printed parts. Presented at Hannover Messe 2026 in
+four languages.
 
 **EMG-controlled underactuated gripper.** Led a team of three: spring-adapted five-bar fingers,
-dual-channel BIOPAC acquisition, finite-state control on signal thresholds, MATLAB and Unity
-visualisation. First author of the write-up.
+dual-channel BIOPAC acquisition, finite-state control on signal thresholds. First author of
+the write-up.
 
-**Hyperspectral tissue classification.** 92 bands. Logistic regression, SVM and random forest
-against dense and Conv1D networks in TensorFlow, Bayesian tuning, Grad-CAM. Random forest
-won: F1 0.934 on the held-out split.
+**Hyperspectral tissue classification.** 92 bands, classical models against dense and Conv1D
+networks in TensorFlow, Grad-CAM. Random forest won: F1 0.934 held out.
 
-**Autonomous logistics and heavy handling.** Mechanical components for autonomous logistics
-systems at Cargobot, CAD through CAM. Earlier, a remote-controlled machine that moves 250 kg
-marble slabs.
+**Autonomous logistics and heavy handling.** Mechanical components for Cargobot's autonomous
+logistics systems, CAD through CAM. Earlier, a remote-controlled mover for 250 kg marble slabs.
 
 ---
 
