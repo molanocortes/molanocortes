@@ -4,8 +4,7 @@
 
 Robotics systems engineer. Mechanical engineer by training, top 1 % of Colombia's national
 graduate exam; M.Sc. Biomedical Engineering at Hochschule Anhalt, embedded focus. I take
-physical robots from mechanism to boards to firmware to the software that drives them, and I
-have shipped the whole thing alone.
+physical robots from mechanism to boards to firmware to the software that drives them.
 
 I want to work on embodied AI, and I already build with AI at the bench. TAKTO ONE below is
 what one engineer ships that way.
