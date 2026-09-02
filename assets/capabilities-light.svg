@@ -17,7 +17,7 @@
 <text x="185.3" y="104" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#23201A">2 custom PCBs, KiCad</text>
 <text x="185.3" y="125" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#5C564A">12 × AS5600 encoders</text>
 <text x="185.3" y="146" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#5C564A">IMUs, EMG front end</text>
-<text x="185.3" y="167" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#5C564A">I²C, UART, FPGA</text>
+<text x="185.3" y="167" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" fill="#5C564A">I²C, UART, Dynamixel</text>
 <text x="342.7" y="66" font-family="ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace" font-size="12" letter-spacing="1.6" font-weight="600" fill="#23201A">FIRMWARE</text>
 <line x1="342.7" y1="78" x2="364.7" y2="78" stroke="#2F76BF" stroke-width="2"/>
 <line x1="364.7" y1="78" x2="482" y2="78" stroke="#D8D2C4" stroke-width="1"/>

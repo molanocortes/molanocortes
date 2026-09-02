@@ -44,7 +44,7 @@ COLUMNS = [
       "71 printed parts", "LPBF metal, FEM, DfAM"], "joint"),
     ("ELECTRONICS",
      ["2 custom PCBs, KiCad", "12 × AS5600 encoders",
-      "IMUs, EMG front end", "I²C, UART, FPGA"], "encoder"),
+      "IMUs, EMG front end", "I²C, UART, Dynamixel"], "encoder"),
     ("FIRMWARE",
      ["Teensy 4.1, C++", "2 kHz control loop",
       "Motor bus on the MCU", "SD log, round display"], "teensy"),
