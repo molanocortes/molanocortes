@@ -10,8 +10,8 @@ have shipped the whole thing alone.
 I want to work on embodied AI, and I already build with AI at the bench. TAKTO ONE below is
 what one engineer ships that way.
 
-Finishing the M.Sc. in autumn 2026. Open to robotics R&D roles in Europe from then, and to
-collaborations on the device now. Köthen, Germany · Spanish, English, German, Portuguese ·
+Thesis submitted. Available now for robotics R&D roles in Europe, and for collaborations on
+the device. Köthen, Germany · Spanish, English, German, Portuguese ·
 [LinkedIn](https://www.linkedin.com/in/sm29) · [sebastian.molano.29@gmail.com](mailto:sebastian.molano.29@gmail.com)
 
 <picture>
