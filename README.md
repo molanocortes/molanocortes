@@ -64,12 +64,13 @@ in simulation before you print a part.
 
 ### Also built
 
-**Metal printing, the research side.** While building TAKTO I worked in Hochschule Anhalt's
-laser powder-bed group on AlSi10Mg: pushing the alloy toward a higher elastic modulus by
-controlling crystal orientation. I did the simulation and the metallography: FEM of the build
-predicting residual stress and distortion, the heat treatments that relieve them,
-microstructure analysis under the microscope, and running the machine. Showed the process at
-Hannover Messe 2026, in whichever of four languages the visitor spoke.
+**Metal printing, for lighter robots.** Printed metal gives a robot part complex geometry
+without the mass, if you can trust the print. A year in Hochschule Anhalt's laser powder-bed
+group on AlSi10Mg taught me how: FEM that predicts residual stress and distortion before a
+build, the heat treatments that relieve them, microscope checks on what came out, and the
+machine itself. Part of that was work on raising the alloy's stiffness through crystal
+orientation, which for a robot means stiffness per gram. Showed the process at Hannover Messe
+2026, in whichever of four languages the visitor spoke.
 
 **An EMG-driven gripper, before TAKTO.** Three of us built it; I led. Five-bar fingers with
 springs for underactuation, two EMG channels off a BIOPAC, a finite-state controller switching
