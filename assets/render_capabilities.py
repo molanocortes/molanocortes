@@ -34,31 +34,36 @@ THEMES = {
 }
 
 KICKER_LEFT = "ONE ENGINEER, THE WHOLE STACK"
-KICKER_RIGHT = "JOINT TO TWIN, ONE DATA PATH"
+KICKER_RIGHT = "JOINT TO MODEL, ONE DATA PATH"
 
-# label, four specifics (short, so they never wrap), path node
+# label, four specifics (short, so they never wrap), path node.
+# First line is the TAKTO ONE fact; the rest widen it with work from elsewhere.
 COLUMNS = [
     ("MECHANISM",
-     ["Tendon-driven fingers", "4 fingers, 12 joints",
-      "Series-elastic spools", "71 printed parts"], "joint"),
+     ["Tendon-driven hand", "4 fingers, 12 joints",
+      "71 printed parts", "LPBF metal, FEM, DfAM"], "joint"),
     ("ELECTRONICS",
      ["2 custom PCBs, KiCad", "12 × AS5600 encoders",
-      "3 IMUs, EMG front end", "8 Dynamixel servos"], "encoder"),
+      "IMUs, EMG front end", "CAN, EtherCAT, FPGA"], "encoder"),
     ("FIRMWARE",
-     ["Teensy 4.1, C++", "Control loop to 2 kHz",
-      "Motor bus on the MCU", "SD log, round display"], "teensy"),
+     ["Teensy 4.1, C++", "2 kHz control loop",
+      "Motor bus on the MCU", "RTOS, ROS 2, Linux"], "teensy"),
     ("CONTROL",
-     ["Series-elastic tendons", "Transparent to assist",
-      "Current-limited motors", "Hand-to-hand teleop"], "tendon"),
+     ["Series-elastic drive", "Transparent / assist",
+      "Impedance control", "Hand-to-hand teleop"], "tendon"),
     ("SOFTWARE",
-     ["Browser console, 3D twin", "WebXR AR layer",
-      "Expo app, iOS + Android", "Session replay in 4D"], "twin"),
+     ["Live 3D twin, WebXR", "iOS + Android app",
+      "Python, FastAPI", "Session replay in 4D"], "twin"),
+    ("ML · SIGNALS",
+     ["EMG acquisition, DSP", "TensorFlow, Conv1D",
+      "Hyperspectral, F1 0.93", "Grad-CAM, sklearn"], "model"),
 ]
 
-TITLE = ("What I build: mechanism, electronics, firmware, control and software, "
-         "one data path")
-DESC = ("Five layers of the TAKTO ONE stack, each with the specifics of the shipped "
-        "design. A hairline traces the data path from a finger joint to the 3D twin.")
+TITLE = ("What I build: mechanism, electronics, firmware, control, software and "
+         "machine learning, one data path")
+DESC = ("Six layers I work across, each opening with a TAKTO ONE fact and widening "
+        "to work from elsewhere. A hairline traces the data path from a finger joint "
+        "to a trained model.")
 
 
 def n(v):
@@ -101,8 +106,8 @@ def render_wide(theme):
     label_y, rule_y, body_y0, body_dy = 66, 78, 104, 21
     for i, (label, lines, _) in enumerate(COLUMNS):
         x = M + i * col_w
-        o.append(f'<text x="{n(x)}" y="{label_y}" {MONO} font-size="12.5" '
-                 f'letter-spacing="1.8" font-weight="600" fill="{t["ink"]}">'
+        o.append(f'<text x="{n(x)}" y="{label_y}" {MONO} font-size="12" '
+                 f'letter-spacing="1.6" font-weight="600" fill="{t["ink"]}">'
                  f'{esc(label)}</text>')
         o.append(f'<line x1="{n(x)}" y1="{rule_y}" x2="{n(x + 22)}" y2="{rule_y}" '
                  f'stroke="{t["accent"]}" stroke-width="2"/>')
@@ -111,7 +116,7 @@ def render_wide(theme):
         for k, line in enumerate(lines):
             fill = t["ink"] if k == 0 else t["muted"]
             o.append(f'<text x="{n(x)}" y="{body_y0 + k * body_dy}" {SANS} '
-                     f'font-size="13.5" fill="{fill}">{esc(line)}</text>')
+                     f'font-size="13" fill="{fill}">{esc(line)}</text>')
     py, x0, x1 = 212, M + 6, W - M - 6
     o.append(f'<line x1="{x0}" y1="{py}" x2="{x1}" y2="{py}" stroke="{t["line"]}" '
              f'stroke-width="1"/>')
