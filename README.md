@@ -2,10 +2,9 @@
 
 ## Sebastian Molano
 
-Robotics engineer. I design, build and program wearable robots end to end: the mechanism,
-the boards, the firmware, the control loop, and the software on the other side of the wire.
-I came to it through design, so I care what the thing feels like in the hand, not only
-whether the loop closes.
+Robotics engineer. I design, build and program wearable robots end to end: mechanism, boards,
+firmware, control loop, and the software on the other side of the wire. I came from design,
+so the device has to feel right in the hand, not only close its loop.
 
 M.Sc. Biomedical Engineering, Hochschule Anhalt · Germany ·
 [LinkedIn](https://www.linkedin.com/in/sm29) · [sebastian.molano.29@gmail.com](mailto:sebastian.molano.29@gmail.com)
@@ -15,14 +14,14 @@ M.Sc. Biomedical Engineering, Hochschule Anhalt · Germany ·
   <img alt="What I build, in five columns: mechanism, electronics, firmware, control and software, joined by one data path from a finger joint to the 3D twin." src="assets/capabilities-light.svg" width="100%">
 </picture>
 
-**The whole thing.** I take a device from sketch to CAD to boards to firmware to a live twin
-in the browser, and I do not hand off in between.
+**The whole thing.** Sketch, CAD, boards, firmware, live twin in the browser. One pair of
+hands, no handoffs.
 
-**Measured, not claimed.** Every rate gets its own number, status is stated plainly, and
-nothing is called done that only ran on the bench.
+**Measured, not claimed.** Every rate has its own number. Bench results are called bench
+results.
 
-**Built to be built.** What I make ships as source: parts you can print, boards you can order,
-code you can run with no hardware attached.
+**Built to be built.** Everything ships as source: parts you can print, boards you can order,
+code that runs with no hardware attached.
 
 ---
 
@@ -32,13 +31,13 @@ code you can run with no hardware attached.
 <tr>
 <td width="54%" valign="top"><a href="https://github.com/molanocortes/takto-one"><img src="assets/takto/turntable.webp" alt="TAKTO ONE turning through one full revolution" width="100%"></a></td>
 <td width="46%" valign="top">
-<b>An open-source hand exoskeleton, and my master's thesis.</b> Twelve finger joints read at the joint itself, eight tendons driven from the forearm, the control loop on the device. One person designed, built and programmed all of it.
+<b>Open-source hand exoskeleton. My master's thesis.</b> Twelve joints read at the joint, eight tendons driven from the forearm, the control loop on the device. Designed, built and programmed by one person.
 <br><br>
-The repository is everything needed to build one: CAD, two KiCad boards, Teensy firmware, the bridge and operator console, the AR layer, the phone companion, the bill of materials and an illustrated build guide. The whole stack runs in simulation, so you can explore it before printing a part.
+The repository is everything needed to build one: CAD, two KiCad boards, Teensy firmware, bridge and console, AR layer, phone app, BOM, illustrated build guide. The whole stack runs in simulation before you print a part.
 <br><br>
 <b><a href="https://github.com/molanocortes/takto-one">Explore the repository →</a></b>
 <br><br>
-<sub>Status: four fingers built and instrumented, twelve encoders reading live, motor-driven finger motion demonstrated on the bench. Force rendering and assistance are not yet characterised.</sub>
+<sub>Bench status: four fingers built and instrumented, twelve encoders live, motor-driven finger motion demonstrated. Force rendering and assistance not yet characterised.</sub>
 </td>
 </tr>
 </table>
@@ -47,15 +46,15 @@ The repository is everything needed to build one: CAD, two KiCad boards, Teensy 
 
 ### Released on their own
 
-Pieces pulled out of the work above, because they are useful without the rest of it.
+Pulled out of the work above because they stand on their own.
 
 | | | |
 | --- | --- | --- |
-| **[dynamixel-on-device](https://github.com/molanocortes/dynamixel-on-device)** | The Dynamixel Protocol 2.0 loop on the microcontroller instead of a host PC. Fast Sync Read, allocation-free, testable on a laptop with no hardware. | <sub>C++&nbsp;·&nbsp;AGPL‑3.0</sub> |
-| **[bno085-multi](https://github.com/molanocortes/bno085-multi)** | Several BNO085 IMUs on one microcontroller at full rate. Every byte of protocol state lives inside the object. | <sub>C&nbsp;·&nbsp;MIT</sub> |
-| **[consent-scoped-agent-negotiation](https://github.com/molanocortes/consent-scoped-agent-negotiation)** | Two people's AI agents settle a bounded decision without either seeing the other's private data. Signed consent, an injection-proof wire format, an offline adversarial suite. | <sub>Python&nbsp;·&nbsp;MIT</sub> |
-| **[latex-safe-build](https://github.com/molanocortes/latex-safe-build)** | LaTeX builds in an isolated scratch copy, so a build can never corrupt the tree it builds from. | <sub>Shell&nbsp;·&nbsp;MIT</sub> |
-| **[multi-volume-controller](https://github.com/molanocortes/multi-volume-controller)** | A per-app volume mixer for macOS on Core Audio process taps. No driver, no admin install. | <sub>Swift&nbsp;·&nbsp;AGPL‑3.0</sub> |
-| **[penumbra-screen-dimmer](https://github.com/molanocortes/penumbra-screen-dimmer)** | A Mac screen darker than the hardware minimum, click-through, across every Space. | <sub>Python&nbsp;·&nbsp;MIT</sub> |
+| **[dynamixel-on-device](https://github.com/molanocortes/dynamixel-on-device)** | Dynamixel Protocol 2.0 on the microcontroller, no host PC. Fast Sync Read, no heap, unit-testable without hardware. | <sub>C++&nbsp;·&nbsp;AGPL‑3.0</sub> |
+| **[bno085-multi](https://github.com/molanocortes/bno085-multi)** | Several BNO085 IMUs on one MCU at full rate. The stock driver is single-instance by construction; this one is reentrant. | <sub>C&nbsp;·&nbsp;MIT</sub> |
+| **[consent-scoped-agent-negotiation](https://github.com/molanocortes/consent-scoped-agent-negotiation)** | Two AI agents settle a bounded decision without seeing each other's private data. Signed consent, a wire format with nowhere for an injection to live, an offline adversarial suite. | <sub>Python&nbsp;·&nbsp;MIT</sub> |
+| **[latex-safe-build](https://github.com/molanocortes/latex-safe-build)** | LaTeX builds in an isolated copy. A build can never corrupt its own source tree. | <sub>Shell&nbsp;·&nbsp;MIT</sub> |
+| **[multi-volume-controller](https://github.com/molanocortes/multi-volume-controller)** | Per-app volume mixer for macOS on Core Audio process taps. No driver, no admin rights. | <sub>Swift&nbsp;·&nbsp;AGPL‑3.0</sub> |
+| **[penumbra-screen-dimmer](https://github.com/molanocortes/penumbra-screen-dimmer)** | Dims a Mac below the hardware minimum. Click-through, every Space, every full-screen app. | <sub>Python&nbsp;·&nbsp;MIT</sub> |
 
 <!-- Portfolio: add a sebastianmolano.com link to the header line once it is deployed. -->
