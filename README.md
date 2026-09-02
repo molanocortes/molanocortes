@@ -1,115 +1,85 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img alt="A line drawing of a robotic finger linkage flexing through a grasp, beside three scrolling joint-angle traces for its abduction, MCP and PIP encoder channels." src="assets/hero-light.svg" width="100%">
-</picture>
+<img src="assets/takto/hero.png" alt="TAKTO ONE, an open-source hand exoskeleton, in its Snow and Onyx colourways. Designed and built by Sebastian Molano." width="100%">
 
 ## Sebastian Molano
 
-Robotics engineer. I build wearable robots end to end: the mechanism and the CAD, the
-boards, the firmware, the real-time control, and the interfaces on the other side of the
-wire. I came to it through design, so I care what the thing feels like in the hand, not
-only whether the loop closes.
+Robotics engineer. I design, build and program wearable robots end to end: the mechanism,
+the boards, the firmware, the control loop, and the software on the other side of the wire.
 
-M.Sc. Biomedical Engineering, Hochschule Anhalt. Germany.
+M.Sc. Biomedical Engineering, Hochschule Anhalt · Germany ·
+[LinkedIn](https://www.linkedin.com/in/sm29) · [sebastian.molano.29@gmail.com](mailto:sebastian.molano.29@gmail.com)
 
-<sub>The drawing above is a real linkage, not decoration. Its link lengths, dorsal standoff,
-telescopic slide law and joint coupling are the ones the device's digital twins render from,
-so the mechanism moves the way the built one does. Source:
-<a href="assets/render_hero.py">assets/render_hero.py</a>.</sub>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/capabilities-dark.svg">
+  <img alt="What I build, in five columns: mechanism, electronics, firmware, control and software, joined by one data path from a finger joint to the 3D twin." src="assets/capabilities-light.svg" width="100%">
+</picture>
 
 ---
 
 ### TAKTO ONE
 
-An open, low-cost hand exoskeleton for rehabilitation research, and the subject of my
-master's thesis.
+An open-source hand exoskeleton that reads all twelve finger joints at the joint itself and
+drives them back through tendons, with the control loop on the device. I designed, built and
+programmed all of it: the mechanism, two custom PCBs, the Teensy firmware, and a live 3D twin
+for browser, headset and phone.
 
-All four long fingers are built and instrumented, three magnetic joint encoders each,
-twelve in total. Every finger runs the same mechanism, the same tendon routing and the
-same antagonist belt drive, scaled to its own size, and the forearm housing provisions
-ten tendon-spool bays.
+<img src="assets/takto/film.webp" alt="The TAKTO ONE product film: macro passes over the finger linkages, spools and forearm housing, ending on the device name." width="100%">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/system-map-dark.svg">
-  <img alt="Signal map of the TAKTO system. Twelve AS5600 joint encoders behind two multiplexers, two BNO085 IMUs and one EMG channel feed a Teensy 4.1, which streams over USB serial to a host PC. The host owns the motor bus through a U2D2 and drives Dynamixel XC330 servos on tendon spools, whose tendons close the loop back onto the worn hand. The host also feeds the web console, the AR layer and the Android app." src="assets/system-map-light.svg" width="100%">
-</picture>
+<table>
+<tr>
+<td width="50%"><img src="assets/takto/turntable.webp" alt="TAKTO ONE turning through one full revolution" width="100%"></td>
+<td width="50%"><img src="assets/takto/replay.webp" alt="A recorded session replaying in 4D: the hand twin flying its wrist trajectory through a wireframe room" width="100%"></td>
+</tr>
+<tr>
+<td><sub><b>The machine.</b> Four tendon-driven fingers, ten spool bays, a round display on the forearm.</sub></td>
+<td><sub><b>Session replay.</b> Twelve joint angles and the 6-DoF wrist path, played back in space.</sub></td>
+</tr>
+</table>
 
-The split is deliberate. The Teensy only acquires and logs; the host owns the motor bus
-through a U2D2 and closes the loop. Two boxes in that diagram are libraries I pulled out
-and published: the IMU node runs [`bno085-multi`](https://github.com/molanocortes/bno085-multi),
-and [`dynamixel-on-device`](https://github.com/molanocortes/dynamixel-on-device) exists to
-move that bus off the host entirely.
+<img src="assets/takto/ar-modes.webp" alt="LUMEN, the AR layer, in three modes: the hand twin, touch objects that respond to the fingers, and the atelier hub" width="100%">
+<sub><b>LUMEN, the AR layer.</b> The twin and its data in the room instead of on a monitor. WebXR, same stream as the console.</sub>
 
-### Three surfaces, one contract
+<table>
+<tr>
+<td width="50%"><img src="assets/takto/pcbs.png" alt="The two custom PCBs: the AS5600 encoder board and the hand-shaped palm carrier" width="100%"></td>
+<td width="50%"><img src="assets/takto/app-screens.png" alt="The phone companion: Live, Replay and Data screens" width="100%"></td>
+</tr>
+<tr>
+<td><sub><b>Two boards, from scratch.</b> Encoder board, one per joint, and the palm carrier that fans them out. KiCad.</sub></td>
+<td><sub><b>Phone companion.</b> Live twin, replay, channels. One Expo codebase for iOS, Android and the browser.</sub></td>
+</tr>
+</table>
 
-The device is only half of it. The same host serves one WebSocket contract to three
-clients that stay in sync with each other, so a session recorded on one is visible on
-all of them.
+<img src="assets/takto/watch-faces.webp" alt="The three device watch faces animating: boot sequences, a recording counter and an idle face" width="100%">
+<sub><b>The device's own screen.</b> Three faces, every state animated, drawn by a dirty-tile renderer inside the firmware's frame budget.</sub>
 
-**Web console.** The operator surface: live telemetry, motor tools, guided sessions,
-capture, and a CAD digital twin driven from the encoders. Also carries the sign-language
-capture and translation surfaces.
+<br><br>
 
-**LUMEN, the AR layer.** A WebXR passthrough experience for the headset. The robotic
-hand renders in the room next to the real one, driven by the same stream, with an
-environment scan so the twin sits on your actual desk.
-
-**Android companion.** The same console on a phone, pairing by QR, speaking the exact
-same host contract so anything that serves the web console serves the app unchanged.
-
-Underneath them: a **series-elastic tendon control stack**, a cascaded tension and
-impedance controller that closes the loop on the joint encoders and uses the springs as
-force sensors.
-
-An executable spec spins the host up in simulation, connects all three surfaces and
-proves shared recording, host-side rep counting, motor clamping and hostile-input
-tolerance across them.
-
-> These four live in the project repository and are **not public yet**. They go out with
-> the open release of the device, not before.
+**Where it stands.** Four fingers built and instrumented, all twelve encoders reading live,
+motor-driven finger motion demonstrated on the bench. Force rendering and assistance are not
+yet characterised. The full open release, CAD, KiCad, firmware and software, is in preparation.
 
 ---
 
 ### Published
 
-Pieces I pulled out of the above and released on their own, because they are useful
-without the rest of it.
+Pieces pulled out of the work above and released on their own.
 
-**[consent-scoped-agent-negotiation](https://github.com/molanocortes/consent-scoped-agent-negotiation)** · Python · MIT
-CSNP: two people's AI agents settle a bounded decision without either seeing the other's
-private data. Consent is a signed envelope enforced in code by an object-capability guard,
-the wire format has no free-text field for an injection to live in, model output is
-re-derived against the granted choice set, and the disclosure claim is measured on the
-transmitted bytes. Ships a wire spec, a threat model, and an adversarial test suite that
-runs offline.
+| | | |
+| --- | --- | --- |
+| **[consent-scoped-agent-negotiation](https://github.com/molanocortes/consent-scoped-agent-negotiation)** | Two people's AI agents settle a bounded decision without either seeing the other's private data. Signed consent, an injection-proof wire format, an offline adversarial suite. | <sub>Python&nbsp;·&nbsp;MIT</sub> |
+| **[dynamixel-on-device](https://github.com/molanocortes/dynamixel-on-device)** | The Dynamixel Protocol 2.0 loop on the microcontroller instead of a host PC. Fast Sync Read, allocation-free, testable on a laptop with no hardware. | <sub>C++&nbsp;·&nbsp;AGPL‑3.0</sub> |
+| **[bno085-multi](https://github.com/molanocortes/bno085-multi)** | Several BNO085 IMUs on one microcontroller at full rate. Every byte of protocol state lives inside the object. | <sub>C&nbsp;·&nbsp;MIT</sub> |
+| **[latex-safe-build](https://github.com/molanocortes/latex-safe-build)** | LaTeX builds in an isolated scratch copy, so a build can never corrupt the tree it builds from. | <sub>Shell&nbsp;·&nbsp;MIT</sub> |
+| **[multi-volume-controller](https://github.com/molanocortes/multi-volume-controller)** | A per-app volume mixer for macOS on Core Audio process taps. No driver, no admin install. | <sub>Swift&nbsp;·&nbsp;AGPL‑3.0</sub> |
+| **[penumbra-screen-dimmer](https://github.com/molanocortes/penumbra-screen-dimmer)** | A Mac screen darker than the hardware minimum, click-through, across every Space. | <sub>Python&nbsp;·&nbsp;MIT</sub> |
 
-**[dynamixel-on-device](https://github.com/molanocortes/dynamixel-on-device)** · C++ · AGPL-3.0
-Runs the Dynamixel Protocol 2.0 loop on the microcontroller instead of a host PC. Fast Sync
-Read, allocation-free, bounded waits, and a wire protocol you can unit-test on a laptop with
-no hardware attached.
+<!-- When takto-one goes public, add it at the head of this table:
+| **[takto-one](https://github.com/molanocortes/takto-one)** | Everything needed to build the device above: CAD, KiCad boards, Teensy firmware, bridge, console, AR layer, app, BOM. | <sub>Apache‑2.0&nbsp;·&nbsp;CERN‑OHL‑S&nbsp;·&nbsp;CC‑BY‑4.0</sub> |
+and change the last sentence of "Where it stands" to point at it.
 
-**[bno085-multi](https://github.com/molanocortes/bno085-multi)** · C · MIT
-Two or more BNO085 IMUs on one microcontroller at full rate. The stock library keeps its
-protocol state in file-scope globals and is single-instance by construction; this one keeps
-every byte inside the object.
-
-**[latex-safe-build](https://github.com/molanocortes/latex-safe-build)** · Shell · MIT
-Compiles LaTeX in an isolated scratch copy, so a build can never corrupt the document it is
-building. Written while several agent sessions edited one thesis tree at once.
-
-**[multi-volume-controller](https://github.com/molanocortes/multi-volume-controller)** · Swift · AGPL-3.0
-A per-app volume mixer for macOS on Core Audio process taps. No driver, no admin install, and
-it never becomes your default output device, so it cannot leave you without sound.
-
-**[penumbra-screen-dimmer](https://github.com/molanocortes/penumbra-screen-dimmer)** · Python · MIT
-Takes a Mac screen darker than the hardware minimum, click-through, across every Space and
-full-screen app.
-
----
-
-### Elsewhere
-
-[LinkedIn](https://www.linkedin.com/in/sm29) · [sebastian.molano.29@gmail.com](mailto:sebastian.molano.29@gmail.com)
-
-<!-- Portfolio: add this line once sebastianmolano.com is deployed.
-     [sebastianmolano.com](https://sebastianmolano.com) -->
+     The film in assets/takto/film.webp is an animated WebP of docs/media/TAKTO-ONE.mp4.
+     GitHub can also play the real MP4 with sound-capable controls, but only from a
+     user-attachments URL minted in a PUBLIC repo: open any issue in this repo, drag
+     TAKTO-ONE.mp4 into the comment box, copy the https://github.com/user-attachments/...
+     URL it produces, and put it alone on its own line in place of the <img> above.
+     Portfolio: add a sebastianmolano.com link to the header line once it is deployed. -->
