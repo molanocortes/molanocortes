@@ -1,5 +1,3 @@
-<img src="assets/takto/hero.webp" alt="TAKTO ONE, an open-source hand exoskeleton, in its Snow and Onyx colourways. Designed and built by Sebastian Molano." width="100%">
-
 ## Sebastian Molano
 
 Robotics systems engineer. Mechanical engineer by training, top 1 % of Colombia's national
@@ -32,6 +30,8 @@ code that runs with no hardware attached.
 ---
 
 ### TAKTO ONE
+
+<img src="assets/takto/hero.webp" alt="TAKTO ONE, an open-source hand exoskeleton, in its Snow and Onyx colourways. Designed and built by Sebastian Molano." width="100%">
 
 <a href="https://github.com/molanocortes/takto-one"><img src="assets/takto/turntable.webp" alt="TAKTO ONE turning through one full revolution" width="100%"></a>
 
