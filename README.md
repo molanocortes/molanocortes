@@ -84,29 +84,4 @@ logistics robots, CAD through CAM. Before that, a remote-controlled machine that
 
 ---
 
-### Released on their own
-
-Pulled out of the work above because they stand on their own.
-
-**[dynamixel-on-device](https://github.com/molanocortes/dynamixel-on-device)** <sub>C++ · AGPL-3.0</sub><br>
-Dynamixel Protocol 2.0 on the microcontroller, no host PC. Fast Sync Read, no heap,
-unit-testable without hardware.
-
-**[bno085-multi](https://github.com/molanocortes/bno085-multi)** <sub>C · MIT</sub><br>
-Several BNO085 IMUs on one MCU at full rate. The stock driver is single-instance by
-construction; this one is reentrant.
-
-**[consent-scoped-agent-negotiation](https://github.com/molanocortes/consent-scoped-agent-negotiation)** <sub>Python · MIT</sub><br>
-Protocol design for AI agents: two of them settle a bounded decision without seeing each
-other's private data. Signed consent, a wire format with nowhere for an injection to live,
-an offline adversarial suite.
-
-**[latex-safe-build](https://github.com/molanocortes/latex-safe-build)** <sub>Shell · MIT</sub><br>
-LaTeX builds in an isolated copy. A build can never corrupt its own source tree.
-
-Also for the Mac: [multi-volume-controller](https://github.com/molanocortes/multi-volume-controller),
-a driver-free per-app volume mixer on Core Audio process taps, and
-[penumbra-screen-dimmer](https://github.com/molanocortes/penumbra-screen-dimmer), which dims
-the screen below the hardware minimum.
-
 <!-- Portfolio: add a sebastianmolano.com link to the header line once it is deployed. -->
