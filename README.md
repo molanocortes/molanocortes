@@ -11,6 +11,8 @@ Thesis submitted. Available now for robotics R&D roles in Europe, and for collab
 the device. Köthen, Germany · Spanish, English, German, Portuguese ·
 [LinkedIn](https://www.linkedin.com/in/sm29) · [sebastian.molano.29@gmail.com](mailto:sebastian.molano.29@gmail.com)
 
+<img src="assets/takto/hero.webp" alt="TAKTO ONE, an open-source hand exoskeleton, in its Snow and Onyx colourways. Designed and built by Sebastian Molano." width="100%">
+
 <picture>
   <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/capabilities-dark-mobile.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/capabilities-dark.svg">
@@ -30,8 +32,6 @@ code that runs with no hardware attached.
 ---
 
 ### TAKTO ONE
-
-<img src="assets/takto/hero.webp" alt="TAKTO ONE, an open-source hand exoskeleton, in its Snow and Onyx colourways. Designed and built by Sebastian Molano." width="100%">
 
 <a href="https://github.com/molanocortes/takto-one"><img src="assets/takto/turntable.webp" alt="TAKTO ONE turning through one full revolution" width="100%"></a>
 
