@@ -215,7 +215,7 @@ REPOS = {
         spec="Swift + C  ·  macOS 14.4+  ·  AGPL-3.0",
         tag="A per-app volume mixer<br/>for macOS.",
         motif=motif_volume),
-    "penumbra-screen-dimmer": dict(
+    "MacOS-Screen-Dimmer": dict(
         spec="Python  ·  PyObjC / AppKit  ·  MIT",
         tag="Darker than the hardware<br/>minimum.",
         motif=motif_penumbra),

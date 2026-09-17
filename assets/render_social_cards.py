@@ -44,7 +44,7 @@ REPOS = {
         spec="SWIFT + C   ·   macOS 14.4+   ·   AGPL-3.0",
         note="Built on Core Audio process taps. No driver, no admin install, and\n"
              "it never becomes your default output, so it cannot mute your Mac."),
-    "penumbra-screen-dimmer": dict(
+    "MacOS-Screen-Dimmer": dict(
         head=["Darker than the", "hardware minimum."],
         spec="PYTHON   ·   PyObjC / APPKIT   ·   MIT",
         note="A click-through software dimmer that covers the menu bar, the Dock\n"
