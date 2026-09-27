@@ -4,8 +4,8 @@ Robotics systems engineer. Mechanical engineer by training, top 1 % of Colombia'
 graduate exam; M.Sc. Biomedical Engineering at Hochschule Anhalt, embedded focus. I take
 physical robots from mechanism to boards to firmware to the software that drives them.
 
-I want to work on embodied AI, and I already build with AI at the bench. TAKTO ONE below is
-what one engineer ships that way.
+I want to work on embodied AI, and I already build with AI at the bench. The two projects
+below are what one engineer ships that way: a hand exoskeleton and a physics lab.
 
 Thesis submitted. Available now for robotics R&D roles in Europe, and for collaborations on
 the device. Köthen, Germany · Spanish, English, German, Portuguese ·
@@ -54,11 +54,28 @@ in simulation before you print a part.
 
 ---
 
-### If you have five minutes
+### OpenPhysicsAI
 
-- **Read code:** [dynamixel-on-device](https://github.com/molanocortes/dynamixel-on-device). A servo-bus protocol loop with no heap and bounded waits, proven by tests that run on a laptop with no servo attached.
-- **Read reasoning:** [consent-scoped-agent-negotiation](https://github.com/molanocortes/consent-scoped-agent-negotiation). Threat model, wire spec, and an adversarial suite that tries to break both.
-- **See the device move:** [the TAKTO console](https://github.com/molanocortes/takto-one/tree/main/software/console) runs in simulation from one command, no hardware, twelve joints and the 3D twin live.
+<a href="https://github.com/molanocortes/OpenPhysicsAI"><img src="assets/openphysicsai/lab.webp" alt="Seven simulations from OpenPhysicsAI playing at once: a heart valve, a methane fire, a capsule at Mach 6, sound filling a room, a bottle shattering, light around a black hole, a flag in the wind" width="100%"></a>
+
+**An open-source physics lab for people and AI agents, and a competition to make it better.**
+More than twenty verified solvers, from turbulence, shocks and fire to heat, solids, sound,
+radar, magnetic fields and orbits: C with Metal on the GPU, a native 3D app, a command line
+and MCP. Designed and directed by one engineer, built with AI agents. Public since September 2026.
+
+**Why it is built this way.** Code is getting cheap to write; physics you can trust is not.
+So every solver is checked against a closed form or an independent solution before it ships,
+every number in a scenario carries its unit, and an agent finds the right solver in a few
+thousand tokens instead of writing one from scratch.
+
+**Thirteen flags.** Measurements of the real world that no simulator has predicted yet, from
+the wake of a car to a human heartbeat. Anyone can download the lab, try to improve it with
+their own AI and submit it: a machine reruns and scores every pull request against the sealed
+measurements, and what wins is merged for everyone.
+
+**[Explore the repository →](https://github.com/molanocortes/OpenPhysicsAI)**
+
+<sub>Status: thirteen flags posed, four trials scored, none captured yet. The solvers are verified against theory; the flags are how they get validated against measurement.</sub>
 
 ---
 
