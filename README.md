@@ -56,7 +56,7 @@ in simulation before you print a part.
 
 ### OpenPhysicsAI
 
-<a href="https://github.com/molanocortes/OpenPhysicsAI"><img src="assets/openphysicsai/lab.webp" alt="Seven simulations from OpenPhysicsAI playing at once: a heart valve, a methane fire, a capsule at Mach 6, sound filling a room, a bottle shattering, light around a black hole, a flag in the wind" width="100%"></a>
+<a href="https://github.com/molanocortes/OpenPhysicsAI"><img src="assets/openphysicsai/lab.webp" alt="Six simulations from OpenPhysicsAI playing at once: a drone frame 3D printed layer by layer, the wake of a sailplane, a dam breaking, sound filling a concert hall, a heat sink warming up, light near a black hole" width="100%"></a>
 
 **An open-source physics lab for people and AI agents, and a competition to make it better.**
 More than twenty verified solvers, from turbulence, shocks and fire to heat, solids, sound,
