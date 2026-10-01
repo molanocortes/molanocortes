@@ -9,7 +9,7 @@ below are what one engineer ships that way: a hand exoskeleton and a physics lab
 
 Thesis submitted. Available now for robotics R&D roles in Europe, and for collaborations on
 the device. Köthen, Germany · Spanish, English, German, Portuguese ·
-[LinkedIn](https://www.linkedin.com/in/sm29) · [sebastian.molano.29@gmail.com](mailto:sebastian.molano.29@gmail.com)
+[takto.one](https://takto.one) · [LinkedIn](https://www.linkedin.com/in/sm29) · [sebastianmolano.eng@gmail.com](mailto:sebastianmolano.eng@gmail.com)
 
 <img src="assets/takto/hero.webp" alt="TAKTO ONE, an open-source hand exoskeleton, in its Snow and Onyx colourways. Designed and built by Sebastian Molano." width="100%">
 
@@ -31,9 +31,9 @@ code that runs with no hardware attached.
 
 ---
 
-### TAKTO ONE
+### TAKTO ONE · [takto.one](https://takto.one)
 
-<a href="https://github.com/molanocortes/takto-one"><img src="assets/takto/turntable.webp" alt="TAKTO ONE turning through one full revolution" width="100%"></a>
+<a href="https://takto.one"><img src="assets/takto/turntable.webp" alt="TAKTO ONE turning through one full revolution" width="100%"></a>
 
 **Open-source hand exoskeleton. My master's thesis.** It measures twelve finger joints at the
 joint itself, drives eight tendons from the forearm, and runs the control loop on the device.
@@ -44,11 +44,16 @@ flex sensors drifts, and a control loop that goes through a laptop is not a cont
 a magnetic encoder on every joint, a Teensy that owns the motor bus, and one twin that runs
 from the same stream on a monitor, in a headset or on a phone.
 
+**The website.** [takto.one](https://takto.one) is its official home: turn the device through
+360°, walk through the parts that make it, spin the live digital twin and open the operator
+console, all in the browser and with no hardware attached (the console runs a clearly
+labelled simulation). In English, German and Spanish; no cookies, no tracking.
+
 The repository is everything needed to build one: CAD, two KiCad boards, Teensy firmware,
 bridge and console, AR layer, phone app, BOM, illustrated build guide. The whole stack runs
 in simulation before you print a part.
 
-**[Explore the repository →](https://github.com/molanocortes/takto-one)**
+**[Visit takto.one →](https://takto.one)** &nbsp;·&nbsp; **[Explore the repository →](https://github.com/molanocortes/takto-one)**
 
 <sub>Bench status: four fingers built and instrumented, twelve encoders live, motor-driven finger motion demonstrated. Force rendering and assistance not yet characterised.</sub>
 
